@@ -477,7 +477,7 @@ class HitokotoCoordinator(DataUpdateCoordinator[CoordinatorData]):
 
     def _today(self) -> date:
         """Return today's date in the Home Assistant configured timezone."""
-        return dt_util.now(self.hass).date()
+        return dt_util.now().date()
 
     @staticmethod
     def _parse_update_time(value: Any) -> time:
