@@ -1,0 +1,119 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "data": {
+          "host": "主机",
+          "port": "端口",
+          "scheme": "协议",
+          "username": "用户名",
+          "password": "密码",
+          "recorder_tag": "查询记录器标签（可选）",
+          "metrics_tag": "指标采集器标签（可选）"
+        }
+      },
+      "reconfigure": {
+        "data": {
+          "host": "主机",
+          "port": "端口",
+          "scheme": "协议",
+          "username": "用户名",
+          "password": "密码",
+          "recorder_tag": "查询记录器标签（可选）",
+          "metrics_tag": "指标采集器标签（可选）"
+        }
+      },
+      "reauth_confirm": {
+        "data": {
+          "host": "主机",
+          "port": "端口",
+          "scheme": "协议",
+          "username": "用户名",
+          "password": "密码",
+          "recorder_tag": "查询记录器标签（可选）",
+          "metrics_tag": "指标采集器标签（可选）"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "无法连接或响应无效",
+      "invalid_auth": "用户名或密码错误",
+      "forbidden": "没有访问权限",
+      "not_found": "接口或记录器标签不存在"
+    },
+    "abort": {
+      "already_configured": "已经配置",
+      "reauth_successful": "认证信息已更新",
+      "reconfigure_successful": "配置已更新"
+    }
+  },
+  "entity": {
+    "sensor": {
+      "status": {
+        "name": "状态"
+      },
+      "version": {
+        "name": "版本"
+      },
+      "build": {
+        "name": "构建类型"
+      },
+      "queries_total": {
+        "name": "查询总数"
+      },
+      "queries_per_second": {
+        "name": "每秒查询"
+      },
+      "queries_per_minute": {
+        "name": "每分钟查询"
+      },
+      "errors_total": {
+        "name": "执行错误总数"
+      },
+      "latency_avg": {
+        "name": "平均延迟"
+      },
+      "latency_p95": {
+        "name": "P95 延迟"
+      },
+      "top_client": {
+        "name": "首位客户端"
+      },
+      "top_domain": {
+        "name": "首位域名"
+      },
+      "nxdomain_count": {
+        "name": "NXDOMAIN 次数"
+      },
+      "servfail_count": {
+        "name": "SERVFAIL 次数"
+      },
+      "query_type_distribution": {
+        "name": "查询类型分布"
+      },
+      "response_distribution": {
+        "name": "响应分布"
+      },
+      "last_query": {
+        "name": "最近查询"
+      },
+      "last_client": {
+        "name": "最近客户端"
+      },
+      "last_response": {
+        "name": "最近响应"
+      },
+      "last_latency": {
+        "name": "最近延迟"
+      }
+    },
+    "binary_sensor": {
+      "api_online": {
+        "name": "API 在线"
+      },
+      "dns_ready": {
+        "name": "DNS 就绪"
+      }
+    }
+  }
+}

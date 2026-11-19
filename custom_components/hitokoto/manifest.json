@@ -3,10 +3,10 @@
   "name": "Hitokoto Daily",
   "codeowners": ["@admbb"],
   "config_flow": true,
-  "documentation": "https://github.com/admbb/ha-hitokoto",
+  "documentation": "https://github.com/admbb/homeassistant-plugins/tree/main/custom_components/hitokoto",
   "integration_type": "service",
   "iot_class": "cloud_polling",
-  "issue_tracker": "https://github.com/admbb/ha-hitokoto/issues",
+  "issue_tracker": "https://github.com/admbb/homeassistant-plugins/issues",
   "requirements": [],
   "version": "0.1.0"
 }

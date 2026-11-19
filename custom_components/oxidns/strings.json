@@ -1,0 +1,119 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "data": {
+          "host": "Host",
+          "port": "Port",
+          "scheme": "Scheme",
+          "username": "Username",
+          "password": "Password",
+          "recorder_tag": "Query recorder tag (optional)",
+          "metrics_tag": "Metrics collector tag (optional)"
+        }
+      },
+      "reconfigure": {
+        "data": {
+          "host": "Host",
+          "port": "Port",
+          "scheme": "Scheme",
+          "username": "Username",
+          "password": "Password",
+          "recorder_tag": "Query recorder tag (optional)",
+          "metrics_tag": "Metrics collector tag (optional)"
+        }
+      },
+      "reauth_confirm": {
+        "data": {
+          "host": "Host",
+          "port": "Port",
+          "scheme": "Scheme",
+          "username": "Username",
+          "password": "Password",
+          "recorder_tag": "Query recorder tag (optional)",
+          "metrics_tag": "Metrics collector tag (optional)"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Cannot connect or invalid response",
+      "invalid_auth": "Invalid credentials",
+      "forbidden": "Permission denied",
+      "not_found": "API or recorder tag not found"
+    },
+    "abort": {
+      "already_configured": "Already configured",
+      "reauth_successful": "Credentials updated",
+      "reconfigure_successful": "Configuration updated"
+    }
+  },
+  "entity": {
+    "sensor": {
+      "status": {
+        "name": "Status"
+      },
+      "version": {
+        "name": "Version"
+      },
+      "build": {
+        "name": "Build"
+      },
+      "queries_total": {
+        "name": "Queries total"
+      },
+      "queries_per_second": {
+        "name": "Queries per second"
+      },
+      "queries_per_minute": {
+        "name": "Queries per minute"
+      },
+      "errors_total": {
+        "name": "Execution errors total"
+      },
+      "latency_avg": {
+        "name": "Average latency"
+      },
+      "latency_p95": {
+        "name": "P95 latency"
+      },
+      "top_client": {
+        "name": "Top client"
+      },
+      "top_domain": {
+        "name": "Top domain"
+      },
+      "nxdomain_count": {
+        "name": "NXDOMAIN count"
+      },
+      "servfail_count": {
+        "name": "SERVFAIL count"
+      },
+      "query_type_distribution": {
+        "name": "Query type distribution"
+      },
+      "response_distribution": {
+        "name": "Response distribution"
+      },
+      "last_query": {
+        "name": "Last query"
+      },
+      "last_client": {
+        "name": "Last client"
+      },
+      "last_response": {
+        "name": "Last response"
+      },
+      "last_latency": {
+        "name": "Last latency"
+      }
+    },
+    "binary_sensor": {
+      "api_online": {
+        "name": "API online"
+      },
+      "dns_ready": {
+        "name": "DNS ready"
+      }
+    }
+  }
+}
