@@ -1,0 +1,29 @@
+{
+  "entity": {
+    "sensor": {
+      "status": { "default": "mdi:heart-pulse" },
+      "version": { "default": "mdi:information-outline" },
+      "build": { "default": "mdi:package-variant-closed" },
+      "queries_total": { "default": "mdi:counter" },
+      "queries_per_second": { "default": "mdi:speedometer" },
+      "queries_per_minute": { "default": "mdi:chart-line" },
+      "errors_total": { "default": "mdi:alert-circle-outline" },
+      "latency_avg": { "default": "mdi:timer-outline" },
+      "latency_p95": { "default": "mdi:timer-sand" },
+      "top_client": { "default": "mdi:lan-connect" },
+      "top_domain": { "default": "mdi:web" },
+      "nxdomain_count": { "default": "mdi:domain-off" },
+      "servfail_count": { "default": "mdi:alert-network-outline" },
+      "query_type_distribution": { "default": "mdi:chart-donut" },
+      "response_distribution": { "default": "mdi:chart-pie" },
+      "last_query": { "default": "mdi:dns" },
+      "last_client": { "default": "mdi:ip-network-outline" },
+      "last_response": { "default": "mdi:reply-outline" },
+      "last_latency": { "default": "mdi:timer-outline" }
+    },
+    "binary_sensor": {
+      "api_online": { "default": "mdi:cloud-check-outline" },
+      "dns_ready": { "default": "mdi:dns" }
+    }
+  }
+}
