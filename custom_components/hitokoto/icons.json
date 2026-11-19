@@ -1,0 +1,10 @@
+{
+  "services": {
+    "refresh": {"service": "mdi:refresh"},
+    "add_favorite": {"service": "mdi:heart-plus"},
+    "remove_favorite": {"service": "mdi:heart-minus"},
+    "clear_history": {"service": "mdi:delete-sweep"},
+    "get_history": {"service": "mdi:history"},
+    "get_favorites": {"service": "mdi:heart-multiple"}
+  }
+}

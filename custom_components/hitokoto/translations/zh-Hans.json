@@ -1,0 +1,107 @@
+{
+  "title": "一言 · 每日诗句",
+  "config": {
+    "step": {
+      "user": {
+        "title": "配置一言 · 每日诗句",
+        "description": "选择语句获取、更新和保存方式。",
+        "data": {
+          "api_route": "API 线路",
+          "timeout": "请求超时（秒）",
+          "enable_retries": "临时失败时重试",
+          "categories": "语句分类",
+          "min_length": "最短语句长度",
+          "max_length": "最长语句长度",
+          "prefer_author": "替换当天语句时优先保留有作者的句子",
+          "prefer_source": "替换当天语句时优先保留有出处的句子",
+          "auto_update": "启用每日自动更新",
+          "update_time": "每日更新时间",
+          "save_history": "保存语句历史",
+          "history_limit": "历史记录上限（0 表示不限制）",
+          "enable_favorites": "启用收藏",
+          "allow_duplicate_favorites": "允许重复收藏"
+        }
+      }
+    },
+    "error": {
+      "invalid_length_range": "最短长度不能大于最长长度。",
+      "select_category": "请至少选择一个语句分类。"
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "一言 · 每日诗句选项",
+        "description": "修改会在下次手动刷新或定时更新时生效；当前语句会保留。",
+        "data": {
+          "api_route": "API 线路",
+          "timeout": "请求超时（秒）",
+          "enable_retries": "临时失败时重试",
+          "categories": "语句分类",
+          "min_length": "最短语句长度",
+          "max_length": "最长语句长度",
+          "prefer_author": "替换当天语句时优先保留有作者的句子",
+          "prefer_source": "替换当天语句时优先保留有出处的句子",
+          "auto_update": "启用每日自动更新",
+          "update_time": "每日更新时间",
+          "save_history": "保存语句历史",
+          "history_limit": "历史记录上限（0 表示不限制）",
+          "enable_favorites": "启用收藏",
+          "allow_duplicate_favorites": "允许重复收藏",
+          "apply_now": "立即应用设置并获取新句子"
+        }
+      }
+    },
+    "error": {
+      "invalid_length_range": "最短长度不能大于最长长度。",
+      "select_category": "请至少选择一个语句分类。"
+    }
+  },
+  "entity": {
+    "sensor": {
+      "daily": {"name": "每日一言"},
+      "author": {"name": "作者"},
+      "source": {"name": "出处"},
+      "category": {"name": "分类"},
+      "last_updated": {"name": "最后更新时间"},
+      "favorites_count": {"name": "收藏数量"},
+      "history_count": {"name": "历史数量"},
+      "status": {"name": "服务状态"}
+    }
+  },
+  "selector": {
+    "api_route": {
+      "options": {
+        "global": "全球",
+        "international": "国际"
+      }
+    },
+    "categories": {
+      "options": {
+        "a": "动画",
+        "b": "漫画",
+        "c": "游戏",
+        "d": "文学",
+        "e": "原创",
+        "f": "网络",
+        "g": "其他",
+        "h": "影视",
+        "i": "诗词",
+        "j": "网易云",
+        "k": "哲学",
+        "l": "抖机灵"
+      }
+    },
+    "history_limit": {
+      "options": {"0": "不限量"}
+    }
+  },
+  "services": {
+    "refresh": {"name": "换一句", "description": "获取并保存一条新语句。"},
+    "add_favorite": {"name": "收藏语句", "description": "收藏当前语句或本地已保存的 UUID。"},
+    "remove_favorite": {"name": "取消收藏", "description": "取消收藏一条语句。"},
+    "clear_history": {"name": "清空历史", "description": "明确确认后清除历史记录。"},
+    "get_history": {"name": "获取历史", "description": "返回最近保存的语句。"},
+    "get_favorites": {"name": "获取收藏", "description": "返回收藏的语句列表。"}
+  }
+}

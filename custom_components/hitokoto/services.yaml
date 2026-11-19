@@ -1,0 +1,68 @@
+refresh:
+  name: Refresh sentence
+  description: Fetch and store a new sentence.
+  fields:
+    entry_id:
+      name: Config entry
+      description: Optional config entry ID when multiple instances are set up.
+      selector:
+        text:
+add_favorite:
+  name: Add favorite
+  description: Favorite the current sentence, or a locally saved sentence by UUID.
+  fields:
+    entry_id:
+      name: Config entry
+      selector:
+        text:
+    uuid:
+      name: Sentence UUID
+      selector:
+        text:
+remove_favorite:
+  name: Remove favorite
+  description: Remove a sentence from favorites.
+  fields:
+    entry_id:
+      name: Config entry
+      selector:
+        text:
+    uuid:
+      name: Sentence UUID
+      selector:
+        text:
+clear_history:
+  name: Clear history
+  description: Permanently clear history entries while preserving favorites and the daily cache.
+  fields:
+    entry_id:
+      name: Config entry
+      selector:
+        text:
+    confirm:
+      name: Confirm
+      description: Must be true to clear the history.
+      required: true
+      selector:
+        boolean:
+get_history:
+  name: Get history
+  description: Return the newest saved history entries.
+  fields:
+    entry_id:
+      name: Config entry
+      selector:
+        text:
+    limit:
+      name: Result limit
+      selector:
+        number:
+          min: 1
+get_favorites:
+  name: Get favorites
+  description: Return all saved favorite sentences.
+  fields:
+    entry_id:
+      name: Config entry
+      selector:
+        text:

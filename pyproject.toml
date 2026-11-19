@@ -1,0 +1,42 @@
+[project]
+name = "ha-hitokoto"
+version = "0.1.0"
+description = "A Home Assistant integration for a persisted daily Hitokoto sentence."
+readme = "README.md"
+requires-python = ">=3.13,<3.15"
+license = { text = "MIT" }
+dependencies = ["homeassistant>=2025.3.0"]
+
+[project.optional-dependencies]
+test = [
+  "pytest>=8.3",
+  "pytest-asyncio>=0.25",
+  "pytest-cov>=6.0",
+  "pytest-homeassistant-custom-component>=0.13.200",
+  "ruff>=0.11",
+]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
+addopts = "-ra"
+
+[tool.coverage.run]
+branch = true
+source = ["custom_components.hitokoto"]
+
+[tool.coverage.report]
+show_missing = true
+skip_covered = true
+
+[tool.ruff]
+target-version = "py313"
+line-length = 88
+src = ["custom_components", "tests"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM", "ASYNC"]
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"

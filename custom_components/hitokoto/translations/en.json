@@ -1,0 +1,107 @@
+{
+  "title": "Hitokoto Daily",
+  "config": {
+    "step": {
+      "user": {
+        "title": "Configure Hitokoto Daily",
+        "description": "Choose how sentences are fetched, refreshed, and stored.",
+        "data": {
+          "api_route": "API route",
+          "timeout": "Request timeout (seconds)",
+          "enable_retries": "Retry temporary failures",
+          "categories": "Sentence categories",
+          "min_length": "Minimum sentence length",
+          "max_length": "Maximum sentence length",
+          "prefer_author": "Prefer an author when replacing today's sentence",
+          "prefer_source": "Prefer a source when replacing today's sentence",
+          "auto_update": "Enable automatic daily update",
+          "update_time": "Daily update time",
+          "save_history": "Save sentence history",
+          "history_limit": "Maximum history entries (0 means unlimited)",
+          "enable_favorites": "Enable favorites",
+          "allow_duplicate_favorites": "Allow duplicate favorites"
+        }
+      }
+    },
+    "error": {
+      "invalid_length_range": "Minimum length must not exceed maximum length.",
+      "select_category": "Select at least one sentence category."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Hitokoto Daily options",
+        "description": "Changes apply on the next refresh or scheduled update. The current sentence is kept.",
+        "data": {
+          "api_route": "API route",
+          "timeout": "Request timeout (seconds)",
+          "enable_retries": "Retry temporary failures",
+          "categories": "Sentence categories",
+          "min_length": "Minimum sentence length",
+          "max_length": "Maximum sentence length",
+          "prefer_author": "Prefer an author when replacing today's sentence",
+          "prefer_source": "Prefer a source when replacing today's sentence",
+          "auto_update": "Enable automatic daily update",
+          "update_time": "Daily update time",
+          "save_history": "Save sentence history",
+          "history_limit": "Maximum history entries (0 means unlimited)",
+          "enable_favorites": "Enable favorites",
+          "allow_duplicate_favorites": "Allow duplicate favorites",
+          "apply_now": "Apply options and fetch a new sentence now"
+        }
+      }
+    },
+    "error": {
+      "invalid_length_range": "Minimum length must not exceed maximum length.",
+      "select_category": "Select at least one sentence category."
+    }
+  },
+  "entity": {
+    "sensor": {
+      "daily": {"name": "Daily sentence"},
+      "author": {"name": "Author"},
+      "source": {"name": "Source"},
+      "category": {"name": "Category"},
+      "last_updated": {"name": "Last updated"},
+      "favorites_count": {"name": "Favorites count"},
+      "history_count": {"name": "History count"},
+      "status": {"name": "Status"}
+    }
+  },
+  "selector": {
+    "api_route": {
+      "options": {
+        "global": "Global",
+        "international": "International"
+      }
+    },
+    "categories": {
+      "options": {
+        "a": "Anime",
+        "b": "Manga",
+        "c": "Games",
+        "d": "Literature",
+        "e": "Original",
+        "f": "Web",
+        "g": "Other",
+        "h": "Film and television",
+        "i": "Poetry",
+        "j": "Netease Cloud",
+        "k": "Philosophy",
+        "l": "Wit"
+      }
+    },
+    "history_limit": {
+      "options": {"0": "Unlimited"}
+    }
+  },
+  "services": {
+    "refresh": {"name": "Refresh sentence", "description": "Fetch and store a new sentence."},
+    "add_favorite": {"name": "Add favorite", "description": "Favorite the current sentence or a saved UUID."},
+    "remove_favorite": {"name": "Remove favorite", "description": "Remove a sentence from favorites."},
+    "clear_history": {"name": "Clear history", "description": "Clear history after explicit confirmation."},
+    "get_history": {"name": "Get history", "description": "Return recent saved sentences."},
+    "get_favorites": {"name": "Get favorites", "description": "Return saved favorite sentences."}
+  }
+}

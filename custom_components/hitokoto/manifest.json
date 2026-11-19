@@ -1,0 +1,12 @@
+{
+  "domain": "hitokoto",
+  "name": "Hitokoto Daily",
+  "codeowners": ["@admbb"],
+  "config_flow": true,
+  "documentation": "https://github.com/admbb/ha-hitokoto",
+  "integration_type": "service",
+  "iot_class": "cloud_polling",
+  "issue_tracker": "https://github.com/admbb/ha-hitokoto/issues",
+  "requirements": [],
+  "version": "0.1.0"
+}
