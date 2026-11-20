@@ -8,6 +8,7 @@ Home Assistant custom integrations maintained in this repository.
 | --- | --- | --- |
 | Hitokoto Daily | Daily sentence sensor with history, favorites, and actions | [README](custom_components/hitokoto/README.md) |
 | OxiDNS | Read-only health, metrics, query statistics, and optional live events for OxiDNS | [README](custom_components/oxidns/README.md) |
+| Sirivision Switch | Read-only SNMP monitoring for the SR-S25G3412F switch, including ports, traffic, VLANs, and MAC data | [README](custom_components/sirivision_switch/README.md) |
 
 ## Manual installation
 

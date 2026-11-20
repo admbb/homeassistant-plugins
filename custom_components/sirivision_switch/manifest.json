@@ -1,0 +1,12 @@
+{
+  "domain": "sirivision_switch",
+  "name": "Sirivision SR-S25G3412F Switch",
+  "codeowners": ["@sirivision-ha"],
+  "config_flow": true,
+  "dependencies": ["lovelace", "frontend"],
+  "documentation": "https://github.com/sirivision-ha/ha-sirivision-switch",
+  "integration_type": "hub",
+  "iot_class": "local_polling",
+  "requirements": ["pysnmp>=7.1.0"],
+  "version": "1.0.0"
+}

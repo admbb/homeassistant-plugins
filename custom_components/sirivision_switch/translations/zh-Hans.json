@@ -1,0 +1,43 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "连接 Sirivision SR-S25G3412F 交换机",
+        "description": "使用只读 SNMP 协议读取交换机端口、链路速率与实时流量数据。凭据仅保存在 Home Assistant 配置项中。",
+        "data": {
+          "host": "交换机管理 IP",
+          "snmp_port": "SNMP 端口",
+          "community": "只读 Community 字符串",
+          "snmp_version": "SNMP 协议版本",
+          "device_name": "设备显示名称"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "SNMP 连接超时或 Community 不正确，请确认交换机已开启只读 SNMP 并放行 Home Assistant IP。"
+    },
+    "abort": {
+      "already_configured": "该交换机已添加。"
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "交换机轮询与端口映射设置",
+        "data": {
+          "device_name": "设备显示名称",
+          "host": "交换机管理 IP",
+          "poll_traffic": "流量采集间隔（秒）",
+          "poll_status": "状态与错包间隔（秒）",
+          "poll_vlan_mac": "VLAN 与 MAC 表间隔（秒）",
+          "poll_device_info": "设备信息间隔（秒）",
+          "port_aliases_json": "端口别名 JSON（示例格式：\"RJ45-01\": \"RouterOS\"）",
+          "port_ifindex_json": "手动 ifIndex 映射 JSON（示例格式：\"SFP+-01\": 9）"
+        }
+      }
+    },
+    "error": {
+      "invalid_json": "JSON 格式无效，请输入合法的键值对。"
+    }
+  }
+}

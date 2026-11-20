@@ -1,0 +1,43 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Connect Sirivision SR-S25G3412F Switch",
+        "description": "Connect via read-only SNMP to monitor 12 physical ports, link status, and live RX/TX traffic.",
+        "data": {
+          "host": "Switch Management IP",
+          "snmp_port": "SNMP Port",
+          "community": "Read-Only Community",
+          "snmp_version": "SNMP Version",
+          "device_name": "Device Name"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "SNMP connection timed out or community rejected."
+    },
+    "abort": {
+      "already_configured": "This switch is already configured."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Switch Polling & Port Mapping",
+        "data": {
+          "device_name": "Device Name",
+          "host": "Switch Management IP",
+          "poll_traffic": "Traffic Poll Interval (s)",
+          "poll_status": "Status & Error Poll Interval (s)",
+          "poll_vlan_mac": "VLAN & MAC Table Poll Interval (s)",
+          "poll_device_info": "Device Info Poll Interval (s)",
+          "port_aliases_json": "Port Aliases JSON",
+          "port_ifindex_json": "Manual ifIndex Override JSON"
+        }
+      }
+    },
+    "error": {
+      "invalid_json": "Invalid JSON object."
+    }
+  }
+}

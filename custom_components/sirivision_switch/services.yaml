@@ -1,0 +1,28 @@
+set_port_config:
+  name: 设置交换机端口别名与映射
+  description: 修改指定物理端口的自定义别名或人工修正 SNMP ifIndex 映射。
+  fields:
+    entry_id:
+      name: 集成配置项 ID
+      required: true
+      selector:
+        text:
+    physical_port:
+      name: 物理端口编号
+      description: 例如 RJ45-01 或 SFP+-01
+      required: true
+      selector:
+        text:
+    alias:
+      name: 自定义端口名称
+      required: false
+      selector:
+        text:
+    if_index:
+      name: 手动 SNMP ifIndex
+      required: false
+      selector:
+        number:
+          min: 1
+          max: 65535
+          mode: box
