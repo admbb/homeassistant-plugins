@@ -15,3 +15,10 @@ Home Assistant custom integrations maintained in this repository.
 Copy the integration folder you want from `custom_components/` into the same path in your Home Assistant configuration directory, then restart Home Assistant and add the integration from **Settings → Devices & services → Add integration**.
 
 Each integration has its own README and license file where applicable. Do not copy secrets or Home Assistant configuration data into this repository.
+
+## Brand icons
+
+Home Assistant 2026.3 and newer reads custom integration brand images from each
+component's `brand/` directory. Hitokoto Daily, OxiDNS, and Sirivision include
+`brand/icon.png`. The WxPusher icon is a supplemental asset for an integration
+installed separately; see [brand-assets/README.md](brand-assets/README.md).
