@@ -13,7 +13,7 @@
       "top_client": { "default": "mdi:lan-connect" },
       "top_domain": { "default": "mdi:web" },
       "nxdomain_count": { "default": "mdi:domain-off" },
-      "servfail_count": { "default": "mdi:alert-network-outline" },
+      "servfail_count": { "default": "mdi:alert-circle-outline" },
       "query_type_distribution": { "default": "mdi:chart-donut" },
       "response_distribution": { "default": "mdi:chart-pie" },
       "last_query": { "default": "mdi:dns" },
@@ -22,7 +22,7 @@
       "last_latency": { "default": "mdi:timer-outline" }
     },
     "binary_sensor": {
-      "api_online": { "default": "mdi:cloud-check-outline" },
+      "api_online": { "default": "mdi:cloud-check-variant-outline" },
       "dns_ready": { "default": "mdi:dns" }
     }
   }
