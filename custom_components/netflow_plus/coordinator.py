@@ -5,8 +5,8 @@ from __future__ import annotations
 import logging
 from datetime import timedelta
 
-from homeassistant.exceptions import ConfigEntryAuthFailed, UpdateFailed
-from homeassistant.helpers.update_coordinator import DataUpdateCoordinator
+from homeassistant.exceptions import ConfigEntryAuthFailed
+from homeassistant.helpers.update_coordinator import DataUpdateCoordinator, UpdateFailed
 
 from .api import AuthenticationError, NetFlowClient, NetFlowError
 from .const import DEFAULT_SCAN_INTERVAL, DOMAIN
