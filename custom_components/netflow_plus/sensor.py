@@ -90,7 +90,7 @@ SENSORS: tuple[NetFlowSensorDescription, ...] = (
 
 async def async_setup_entry(hass, entry, async_add_entities) -> None:
     """Set up NetFlow Plus sensors."""
-    coordinator = hass.data[DOMAIN][entry.entry_id]
+    coordinator = entry.runtime_data
     async_add_entities(
         NetFlowSensor(coordinator, entry, description)
         for description in SENSORS
