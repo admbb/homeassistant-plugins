@@ -1,0 +1,10 @@
+{
+  "entity": {
+    "sensor": {
+      "engine_status": { "default": "mdi:lan-check" },
+      "export_age": { "default": "mdi:timer-outline" },
+      "ranked_app_count": { "default": "mdi:format-list-numbered" },
+      "top_application": { "default": "mdi:application-cog-outline" }
+    }
+  }
+}

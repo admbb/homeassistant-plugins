@@ -1,0 +1,9 @@
+{
+  "domain": "netflow_plus",
+  "name": "NetFlow Plus",
+  "version": "0.1.0",
+  "config_flow": true,
+  "documentation": "https://github.com/admbb/homeassistant-plugins/tree/main/custom_components/netflow_plus",
+  "iot_class": "local_polling",
+  "codeowners": []
+}

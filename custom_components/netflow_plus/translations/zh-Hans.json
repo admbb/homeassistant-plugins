@@ -1,0 +1,19 @@
+{
+  "config": {
+    "step": {
+      "user": { "data": { "url": "NetFlow Plus 地址", "password": "NetFlow Plus 密码", "scan_interval": "轮询间隔（秒）" } },
+      "reconfigure": { "data": { "url": "NetFlow Plus 地址", "password": "NetFlow Plus 密码", "scan_interval": "轮询间隔（秒）" } },
+      "reauth_confirm": { "data": { "url": "NetFlow Plus 地址", "password": "NetFlow Plus 密码", "scan_interval": "轮询间隔（秒）" } }
+    },
+    "error": { "cannot_connect": "无法连接或 API 响应格式不受支持", "invalid_auth": "NetFlow Plus 密码错误", "forbidden": "没有 API 访问权限" },
+    "abort": { "already_configured": "该 NetFlow Plus 服务已配置", "reconfigure_successful": "配置已更新", "reauth_successful": "密码已更新" }
+  },
+  "entity": {
+    "sensor": {
+      "engine_status": { "name": "引擎状态" },
+      "export_age": { "name": "最新流记录延迟" },
+      "ranked_app_count": { "name": "应用排行数量" },
+      "top_application": { "name": "流量最高的应用" }
+    }
+  }
+}

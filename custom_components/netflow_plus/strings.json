@@ -1,0 +1,19 @@
+{
+  "config": {
+    "step": {
+      "user": { "data": { "url": "NetFlow Plus URL", "password": "Password", "scan_interval": "Polling interval (seconds)" } },
+      "reconfigure": { "data": { "url": "NetFlow Plus URL", "password": "Password", "scan_interval": "Polling interval (seconds)" } },
+      "reauth_confirm": { "data": { "url": "NetFlow Plus URL", "password": "Password", "scan_interval": "Polling interval (seconds)" } }
+    },
+    "error": { "cannot_connect": "Cannot connect or the API response is unsupported", "invalid_auth": "Invalid NetFlow Plus password", "forbidden": "Access to the API is forbidden" },
+    "abort": { "already_configured": "This NetFlow Plus server is already configured", "reconfigure_successful": "Configuration updated", "reauth_successful": "Password updated" }
+  },
+  "entity": {
+    "sensor": {
+      "engine_status": { "name": "Engine status" },
+      "export_age": { "name": "Age of latest export" },
+      "ranked_app_count": { "name": "Ranked applications" },
+      "top_application": { "name": "Top application" }
+    }
+  }
+}

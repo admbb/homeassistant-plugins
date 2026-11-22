@@ -1,0 +1,8 @@
+"""Constants for NetFlow Plus."""
+
+DOMAIN = "netflow_plus"
+CONF_URL = "url"
+DEFAULT_URL = "http://192.168.100.36:8080"
+DEFAULT_SCAN_INTERVAL = 60
+MIN_SCAN_INTERVAL = 30
+MAX_SCAN_INTERVAL = 300
