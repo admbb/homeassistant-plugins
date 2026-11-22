@@ -18,7 +18,7 @@ def _schema(defaults: dict) -> vol.Schema:
     return vol.Schema(
         {
             vol.Required(CONF_URL, default=defaults.get(CONF_URL, DEFAULT_URL)): vol.All(
-                str, str.strip, vol.Length(min=1)
+                str, vol.Length(min=1)
             ),
             vol.Required(CONF_PASSWORD, default=defaults.get(CONF_PASSWORD, "")): selector.TextSelector(
                 selector.TextSelectorConfig(type=selector.TextSelectorType.PASSWORD)
